@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://kit.fontawesome.com/76599f1291.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+    <div class="container2">
+        <nav>
+            <img src="/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><i class="fa-solid fa-house-user"></i><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact me">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <img src="/moon-cartoon-png.png"  id="icon">
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+           <p> Web Developer/Softwere Developer</p>
+           <h1>Hi, I'm <span class="multiText"> </span><br> from India.</h1>
+        </div>
+        
+    </div>
+</div>
+    <!--------about------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/GOURANGA PAL_Photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> <i class="fa-regular fa-square-info"></i>About me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sint dolorem sit dicta blanditiis deserunt, corrupti reiciendis quae vel optio adipisci, porro odit officiis magni beatae, dolorum itaque modi quod?
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Achivments')">Achivments</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Database</span><br>MySQL, ORACLE database.</li>
+                            <li><span>Web Development</span><br>Html,CSS,JavaScript,Bootstrap,React.</li>
+                            <li><span>App Development</span><br>Android Studio</li>
+                            <li><span>Programming Languages</span><br>C,C++,Python,</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>10th</span><br>WBBSE</li>
+                            <li><span>12TH</span><br>WBCHSE</li>
+                            <li><span>UG</span><br>VU-BCA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>1ST</span><br>NONE</li>
+                            <li><span>2ND</span><br>NONE</li>
+                            <li><span>3RD</span><br>NONE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Achivments">
+                        <ul>
+                            <li><span>1ST</span><br>NONE</li>
+                            <li><span>2ND</span><br>NONE</li>
+                            <li><span>3RD</span><br>NONE</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------services------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, molestiae.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-windows"></i>
+                <h2>System Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nam consectetur eligendi officia, fugit, exercitationem vel perspiciatis corporis asperiores hic commodi. Libero distinctio minima cum deleniti enim quidem ipsa laboriosam?
+                </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, molestiae.
+                </p>
+                <a href="#">learn more</a>
+            </div>    
+        </div>
+        <a href="/services.html" target="_blank" class="btn">See more..</a>
+    </div>
+</div>
+<!-----------------------------------------------------------------portfolio---------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam quas inventore?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam quas inventore?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/work-3.png" >
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam quas inventore?</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="/portfolio.html" target="_blank" class="btn">See more..</a>
+    </div>
+</div>
+<!------------------------------------------contect------------------------------------------------------>
+<div id="contact me">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>gourangapal0904@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i></i>+91 7908020938</p>
+                <p><i class="fa-brands fa-whatsapp"></i>+91 7718158782</p>
+                <p><i class="fa-brands fa-telegram"></i>+91 7718158782</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/gouranga.pal.58152" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/gouranga-pal-549997210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Gouranga02"><i class="fa-brands fa-github" target="_blank"></i></a>
+                </div>
+                <a href="/my-cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                  <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                  <button type="submit" class="btn btn3"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>All Copyright Reserve to © Gouranga pal <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<div class="resaume">
+    
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwS1bKeTV5QYP9ECRR3RUHAMWpZvnSgMvTKxlH4Fh14JcsIZMQvLwINdd9wWQFswlkg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg =document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Messege sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+      })
+      </script>
+      <!-- ------------blink text----------- -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script>
+        var typingEffect = new Typed(".multiText",{
+            strings : ["Gouranga","Coder","Designer","Gouranga","Developer"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+      </script>
+  </body>
+</html>
