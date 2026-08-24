@@ -8,7 +8,631 @@
     <link rel="stylesheet" type="text.css" href="style.css" />
     <script src="https://kit.fontawesome.com/76599f1291.js" crossorigin="anonymous"></script>
   </head>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather+Sans:ital,wght@1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather+Sans:ital,wght@1,300;1,800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather+Sans:ital,wght@1,300;1,800&family=Mitr:wght@300&family=News+Cycle&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+     
+    /* background-image: url(/background.png);*/
+     
+}
+html{
+    scroll-behavior: smooth;
+}
+#icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+body{
+    background:black;
+    color: #ffff;
+    
+}
+#header {
+    height: 100vh;
+    width: 100%;
+    /* background-image: url(/pngegg.png); */
+    background-image: url(/background-new.png); 
+    background-size: 100vh;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.img #splash{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    
+}
+.background-image{
+     height:100px; 
+    width: 1050px;
+    display: flex;
+
+     
+}
+.container2{
+    padding: 10px 4%;
+}
+ 
+.container{
+ 
+  padding: 10px 10%;
+   /* margin: -1000px 0;*/
+  
+}
+.container2 nav{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+width: 200px;
+transform: translateY(20px);
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 20px;
+}
+nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav ul li a i{
+    color: #fff;
+    
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+margin-top: 20%;
+margin-left: 10%;
+
+font-size: 30px;
+}
+.header-text p{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.multiText{
+    text-transform: capitalize;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+ 
+}
+/*--------------------about---------------*/
+#about{
+    padding: 80px;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px
+     padding: 5% ;
+    border: 2px solid #ff004f;
+   
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size:80px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    /* border-bottom: 2px solid #ff004f; */
+    /* border-right: 2px solid #ff004f; */
+}
+
+.sub-title i{
+    font-size: 80px;
+    color: #ff004f;
+}
+.about-col-2 p{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.tab-title{
+    display: flex;
+    margin: px 0 40px;
+   
+}
+.tab-links{
+    margin-top: 5%;
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    font-family: 'News Cycle', sans-serif;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+width: 50%;
+}
+.tab-content{
+    list-style: none;
+    margin:30px 0;
+
+}
+.tab-content.active-tab ul li{
+    list-style-type:symbols();
+}
+
+.tab-content ul li span{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: aqua;
+    font-size: 20px;
+
+   
+}
+.tab-content{
+    display: none;
+}
+.tab-content.active-tab{
+    display: block;
+}
+/*------------services---------------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    border: 0.5px solid #ff004f;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.services-list div a{
+    text-decoration: none;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/*---------------------portfolio----------------*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.3s;
+}
+.layer h3{
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px dotted rgb(254, 254, 253);
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s,border 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+    border: 2px solid white;
+    border-radius: 6px;
+
+}
+/*-------------contact me--------------*/
+.contact-left{
+flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    }
+    .contact-left p{
+        margin-top: 30px;
+    }
+    .contact-left p i{
+        color: #ff004f;
+        margin-right: 15px;
+        font-size: 30px;
+    }
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+.btn.btn3{
+    display: inline-block;
+    background: #ff004f;
+    margin-top: 0;
+    align-items: center;
+}
+.contact-right form{
+    width: 100%;
+    align-items: center;
+
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+/*-----------------------------css for small screen--------------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+       background: #080808;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 14px;
+        margin-right: 20px;
+    }
+    
+}
+#msg{
+    color:#61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+/*=========================================================
+   NEW PORTFOLIO POPUP (auto-shows on page load)
+=========================================================*/
+.newportfolio-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.newportfolio-overlay.show{
+    opacity: 1;
+    visibility: visible;
+}
+.newportfolio-modal{
+    position: relative;
+    background: linear-gradient(145deg, #1a1a1a, #262626);
+    border: 1px solid #ff004f;
+    border-radius: 16px;
+    padding: 45px 40px 35px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255,0,79,0.4);
+    transform: scale(0.7) translateY(40px);
+    opacity: 0;
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.4s ease;
+}
+.newportfolio-overlay.show .newportfolio-modal{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    animation: modalGlow 2.5s ease-in-out infinite;
+}
+@keyframes modalGlow{
+    0%, 100%{ box-shadow: 0 0 15px rgba(255,0,79,0.25); }
+    50%{ box-shadow: 0 0 35px rgba(255,0,79,0.55); }
+}
+.newportfolio-close{
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 22px;
+    color: #ababab;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: color 0.3s, transform 0.3s;
+}
+.newportfolio-close:hover{
+    color: #ff004f;
+    transform: rotate(90deg);
+}
+.newportfolio-icon{
+    font-size: 45px;
+    color: #ff004f;
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: iconBounce 1.8s ease-in-out infinite;
+}
+@keyframes iconBounce{
+    0%, 100%{ transform: translateY(0); }
+    50%{ transform: translateY(-8px); }
+}
+.newportfolio-modal h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.newportfolio-modal h2 span{
+    color: #ff004f;
+}
+.newportfolio-modal p{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #ababab;
+    font-size: 15px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+}
+.newportfolio-btn{
+    display: inline-block;
+    background: #ff004f;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 14px 34px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255,0,79,0.4);
+}
+.newportfolio-btn:hover{
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(255,0,79,0.6);
+}
+.newportfolio-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+    transform: skewX(-25deg);
+    animation: btnShine 2.5s infinite;
+}
+@keyframes btnShine{
+    0%{ left: -75%; }
+    50%{ left: 130%; }
+    100%{ left: 130%; }
+}
+  </style>
+
   <body>
+
+    <!-- ===================== NEW PORTFOLIO POPUP ===================== -->
+    <div class="newportfolio-overlay" id="newPortfolioOverlay">
+        <div class="newportfolio-modal">
+            <button class="newportfolio-close" id="newPortfolioClose" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <i class="fa-solid fa-rocket newportfolio-icon"></i>
+            <h2>Check out my <span>New Portfolio</span>!</h2>
+            <p>I've launched a fresh, upgraded portfolio with a better design and experience. Come take a look!</p>
+            <a href="https://gouranga-pal-portfolio.vercel.app" target="_blank" rel="noopener" class="newportfolio-btn">
+                Visit to the New Portfolio
+            </a>
+        </div>
+    </div>
+    <!-- =================== END NEW PORTFOLIO POPUP =================== -->
+
     <div id="header">
     <div class="container2">
         <nav>
@@ -232,6 +856,41 @@
             backSpeed : 80,
             backDelay : 1500
         })
+      </script>
+
+      <!-- ================ NEW PORTFOLIO POPUP LOGIC ================ -->
+      <script>
+        (function(){
+            var overlay = document.getElementById("newPortfolioOverlay");
+            var closeBtn = document.getElementById("newPortfolioClose");
+
+            // Show popup shortly after page load, with a small delay for effect
+            window.addEventListener("load", function(){
+                setTimeout(function(){
+                    overlay.classList.add("show");
+                }, 600);
+            });
+
+            function hidePopup(){
+                overlay.classList.remove("show");
+            }
+
+            closeBtn.addEventListener("click", hidePopup);
+
+            // click outside the modal box also closes it
+            overlay.addEventListener("click", function(e){
+                if(e.target === overlay){
+                    hidePopup();
+                }
+            });
+
+            // Esc key closes it too
+            document.addEventListener("keydown", function(e){
+                if(e.key === "Escape"){
+                    hidePopup();
+                }
+            });
+        })();
       </script>
   </body>
 </html>
